@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Snitch News</string>
+    <string name="title_activity_main_page">main_page</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+
+    <string name="date">22 Oct 2015</string>
+    <string name="categroies">categories</string>
+    <string name="about">snitch is a news app that provide news headlines from over 65 news website and you can browse the
+        news website within the app without the need to use multiple programs and
+        you can browse the news online and offline in the app and bookmark it if you need to check it later</string>
+
+    <string-array name="film_genre">
+
+        <item>categories</item>
+        <item>providers</item>
+        <item>bookmarks</item>
+        <item>About</item>
+        <item>share</item>
+
+
+    </string-array>
+
+    <string-array name="actionFilms">
+        <item>Technology</item>
+        <item>Sport</item>
+        <item>Business</item>
+        <item>Entertainment</item>
+
+
+    </string-array>
+
+
+    <string name="action_settings">Sort</string>
+    <string name="title_activity_page">page</string>
+    <string name="facebook_app_id">1422094301135387</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7864537676903385/7378174959</string>
+    <string name="dialog_message"> Are you sure to exit ? </string>
+    <string name="positive_button"> Yes</string>
+    <string name="negative_button">No</string>
+</resources>

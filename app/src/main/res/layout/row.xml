@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:descendantFocusability="blocksDescendants" >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:paddingLeft="210dp"
+            android:paddingRight="15dp"
+            android:textColor="@android:color/black"
+            android:text="Small Text"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView2"
+
+
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+         android:textSize="10dp"
+            android:textColor="@android:color/black"
+            android:paddingRight="3dp"
+            android:text="Large Text"
+            android:id="@+id/textView3"
+         android:paddingLeft="210dp"
+            android:layout_below="@id/textView2"
+             />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/textView5"
+            android:textSize="10sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/imageView2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/textView4"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/textView5" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_below="@+id/dots"
+            android:layout_alignEnd="@+id/textView5" />
+
+        <ImageButton
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_more_vert_black_24dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

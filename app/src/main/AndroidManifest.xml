@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alper.pola.andoid.snitch">
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        />
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".page"
+
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_page"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".webview"
+            android:parentActivityName=".page"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AppTheme"
+            />
+        <activity
+            android:name=".providers"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".bookmark"
+            android:parentActivityName=".page"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleInstance"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".categories.technology"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleInstance"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".categories.sport"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleInstance"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".categories.business"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleInstance"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".categories.entertaiment"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleInstance"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".Main2Activity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".page"
+
+            ></activity>
+    </application>
+
+</manifest>
